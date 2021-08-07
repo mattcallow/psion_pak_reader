@@ -1,0 +1,19 @@
+Reader/writer for Psion II datapacks
+See https://hackaday.io/project/168408-psion-ii-remote-control
+Connect serial port at 115200 baud
+Needs delays when programming. I use minicom with the following settings
+
++---------------[Terminal settings]----------------+
+|                                                  |
+| A -      Terminal emulation : VT102              |
+| B -     Backspace key sends : BS                 |
+| C -          Status line is : disabled           |
+| D -   Newline tx delay (ms) : 999                |
+| E -          ENQ answerback : Minicom2.7.1       |
+| F - Character tx delay (ms) : 50                 |
+|    Change which setting?                         |
+|                                                  |
++--------------------------------------------------+
+
+
+Then use the paste option (CTRL-A Y) to paste the S-Record file into the terminal window.
